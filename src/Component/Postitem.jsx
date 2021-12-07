@@ -1,5 +1,5 @@
 import React from "react";
- 
+import Bat from './Ui/button/Bat' 
 
 const PostItem  = (props) => {
  
@@ -12,7 +12,9 @@ const PostItem  = (props) => {
               </div>
             </div>
             <div className="post__btns">
-              <button>Удалить пост</button>
+              <Bat onClick = {() => props.remove(props.post)}> 
+              Удалить пост
+              </Bat>
             </div>
           </div>
       );
